@@ -3,16 +3,17 @@
 <head>
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <!-- Navigation -->
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#home" onclick="toggleSection('home')">Home</a></li>
+      <li><a href="#about" onclick="toggleSection('about')">About</a></li>
+      <li><a href="#cv" onclick="toggleSection('cv')">CV</a></li>
+      <li><a href="#publications" onclick="toggleSection('publications')">Publications</a></li>
+      <li><a href="#projects" onclick="toggleSection('projects')">Projects</a></li>
     </ul>
   </nav>
 
@@ -23,37 +24,27 @@
   </section>
 
   <!-- About Section -->
-  <section id="about">
-    <a href="about.html">
-      <h2>About Me</h2>
-      <p>Click here to view the About section on a separate page.</p>
-    </a>
+  <section id="about" style="display: none;">
+    <h2>About Me</h2>
+    <p>Here is some information about me.</p>
   </section>
 
   <!-- CV Section -->
-  <section id="cv">
-    <a href="cv.html">
-      <h2>Curriculum Vitae</h2>
-      <p>Click here to view the CV section on a separate page.</p>
-    </a>
+  <section id="cv" style="display: none;">
+    <h2>Curriculum Vitae</h2>
+    <p>Here is my curriculum vitae.</p>
   </section>
 
   <!-- Publications Section -->
-  <section id="publications">
-    <a href="publications.html">
-      <h2>Publications</h2>
-      <p>Click here to view the Publications section on a separate page.</p>
-    </a>
+  <section id="publications" style="display: none;">
+    <h2>Publications</h2>
+    <p>Here are my publications.</p>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
-    <a href="projects.html">
-      <h2>Projects</h2>
-      <p>Click here to view the Projects section on a separate page.</p>
-    </a>
+  <section id="projects" style="display: none;">
+    <h2>Projects</h2>
+    <p>Here are my projects.</p>
   </section>
-
-  <script src="script.js"></script>
 </body>
 </html>
