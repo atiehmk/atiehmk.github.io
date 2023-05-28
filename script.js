@@ -1,10 +1,11 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+function toggleSection(sectionId) {
+  const sections = document.getElementsByTagName('section');
+  for (let i = 0; i < sections.length; i++) {
+    const section = sections[i];
+    if (section.id === sectionId) {
+      section.style.display = 'block';
+    } else {
+      section.style.display = 'none';
+    }
+  }
+}
